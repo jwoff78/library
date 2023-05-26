@@ -12,7 +12,7 @@
 <p align="center">· PrismGraphics fork w/ custom Console implementation</p>
 
 <h1 align="center">Documentation</h1>
-<h2 align="center"><a href="https://github.com/z-izz/library/blob/zi/exampleOS">example OS made with Rary</a></h2>
+<h2 align="center"><a href="https://github.com/z-izz/library/blob/zi/Docs/exampleOS.cs">example OS made with Rary</a></h2>
 <p align="center">
   <img src="https://cdn.discordapp.com/attachments/922007871477141514/1111498791758069820/image.png">
 </p>
