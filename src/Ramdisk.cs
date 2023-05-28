@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualBasic;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,13 +34,7 @@ namespace Rary
             {
                 keys.Add(key);
             }
-            foreach (var dog in keys.ToArray())
-            {
-                Console.WriteLine(dog);
-            }
-            //return keys.ToArray();
-
-            return new string[] { "dog", "cat" };
+            return keys.ToArray(); // cursed cursed cursed
         }
 
         /// <summary>
