@@ -77,7 +77,7 @@ namespace Rary.GL
         {
             foreach (char c in s)
             {
-                if (c == '\n') { if ( CRTopMargin + CursorY + 16 > maxY) { Clear(); } CursorY += 16; CursorX = CRLeftMargin; } // NEWLINE
+                if (c == '\n') { if ( CRTopMargin + CursorY + 16 > maxY) { Clear(); CursorX = 0; CursorY = 0; } CursorY += 16; CursorX = CRLeftMargin; } // NEWLINE
                 else if (c == '\t') { CursorX += 16; } // TAB
                 else if (c == '\b') // BACKSPACE
                 {
@@ -92,7 +92,7 @@ namespace Rary.GL
                 {
                     this.canvas.DrawFilledRectangle(CRLeftMargin + CursorX, CRTopMargin + CursorY, 8, 16, 0, BackgroundC);
                     this.canvas.DrawString(CRLeftMargin + CursorX, CRTopMargin + CursorY, c.ToString(), font, ForegroundC);
-                    if (CursorX + 16 > maxX) { if (CRTopMargin + CursorY + 16 > maxY) { Clear(); } CursorY += 16; CursorX = CRLeftMargin; }
+                    if (CursorX + 16 > maxX) { if (CRTopMargin + CursorY + 16 > maxY) { Clear(); CursorX = 0; CursorY = 0; } CursorY += 16; CursorX = CRLeftMargin; }
                     if (UImode)
                     {
                         CursorX += 8;
